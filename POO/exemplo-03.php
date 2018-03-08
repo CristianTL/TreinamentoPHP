@@ -69,12 +69,12 @@ class Documento{
 }
 
 $cpf = new Documento();
-$cpf->setNumero("32366723822");
+$cpf->setNumero("43566656766");
 
 var_dump($cpf->getNumero());
 echo "<br/>";
 //Chamando o metodo estatico
-var_dump(Documento::validarCPF("3236672382"));
+var_dump(Documento::validarCPF("34355678900"));
 //var_dump($cpf->validarCPF("3236672382"));
 
 
