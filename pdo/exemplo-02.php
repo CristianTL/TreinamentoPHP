@@ -1,9 +1,9 @@
 <?php
 
 //Conexão SQL Server
-//$conn = new PDO("sqlsrv:database=dbphp7;server=localhost;ConnectionPooling=0", "login", "senha");
+$conn = new PDO("sqlsrv:Database=dbphp7;server=localhost;ConnectionPooling=0", "login", "senha");
 //com ODBC
-$conn = new PDO("odbc:sqlPHP","login","senha");
+//$conn = new PDO("odbc:sqlPHP","login","senha");
 
 $stmt = $conn->prepare("SELECT * FROM tb_usuarios ORDER BY deslogin");
 
